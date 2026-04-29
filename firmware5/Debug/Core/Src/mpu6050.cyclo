@@ -1,0 +1,6 @@
+../Core/Src/mpu6050.c:7:16:MPU6050_Read_Reg	1
+../Core/Src/mpu6050.c:16:26:MPU6050_Read_Burst	1
+../Core/Src/mpu6050.c:22:13:MPU6050_Write_Reg	1
+../Core/Src/mpu6050.c:29:9:MPU6050_Init	2
+../Core/Src/mpu6050.c:49:6:MPU6050_Read_Accel	2
+../Core/Src/mpu6050.c:69:6:MPU6050_Read_Gyro	1
