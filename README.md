@@ -196,23 +196,20 @@ The app receives Bluetooth data from the STM32 system and displays the posture c
 - The Bluetooth module is connected to USART2.
 - The Android phone can pair with and receive data from the Bluetooth module.
 - The system performs binary classification only.
-
+- All project file paths and folder structures are assumed to be correct, including the STM32 project files, NanoEdge AI library files, and the Android APP folder.
 ---
 
 ## 7. Known Issues and Future Improvements
 
 ### Known Issues
 
-- The system currently supports only two posture classes: Good Posture and Bad Posture.
 - Yaw angle may drift over time because the MPU6050 does not include a magnetometer.
 - Classification accuracy depends on sensor placement and training data quality.
-- The system requires consistent belt positioning during use.
-- Bluetooth connection stability may depend on the Bluetooth module and Android device.
 
 ### Future Improvements
 
-- Improve sensor calibration.
+- Improve classification accuracy.
 - Use an IMU with magnetometer support to reduce yaw drift.
-- Improve Bluetooth connection handling in the Android app.
-- Add more posture classes, such as leaning left, leaning right and slouching.
-- Add more detailed long-term posture analysis.
+
+
+
