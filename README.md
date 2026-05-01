@@ -29,7 +29,7 @@ The software is part of a wearable posture monitoring system. The overall data f
 → NanoEdge AI machine learning model  
 → Good Posture or Bad Posture classification  
 → USART2 Bluetooth output  
-→ Mobile phone or PC serial monitor
+→ Mobile phone APP
 
 The four MPU6050 sensors are placed on the wearable belt. Their accelerometer and gyroscope data are used to estimate body posture. The STM32 processes the data and sends the classification result to an external device through Bluetooth.
 
@@ -42,8 +42,6 @@ The four MPU6050 sensors are placed on the wearable belt. Their accelerometer an
 - STM32CubeMX
 - STM32CubeIDE
 - NanoEdge AI Studio
-- GitHub Desktop, optional
-- Serial terminal or Bluetooth serial monitor
 
 ### Required Libraries and Files
 
@@ -61,7 +59,7 @@ The STM32 HAL drivers are generated automatically by STM32CubeMX and included in
 - TCA9548A I2C multiplexer
 - Bluetooth module connected to USART2
 - USB cable
-- Jumper wires
+- FPCB
 - Power supply
 
 ### Environment Setup
@@ -71,12 +69,11 @@ The STM32 HAL drivers are generated automatically by STM32CubeMX and included in
 3. Enable I2C for communication with the MPU6050 sensors.
 4. Enable USART2 for Bluetooth output.
 5. Enable USART1 if additional debugging output is required.
-6. Generate the project for STM32CubeIDE.
-7. Open the generated project in STM32CubeIDE.
-8. Add the NanoEdge AI files to the project.
-9. Add the NanoEdge AI include path in the compiler settings.
-10. Add the NanoEdge AI static library path in the linker settings.
-11. Build the project.
+6. Open the generated project in STM32CubeIDE.
+7. Add the NanoEdge AI files to the project.
+8. Add the NanoEdge AI include path in the compiler settings.
+9. Add the NanoEdge AI static library path in the linker settings.
+10. Build the project.
 
 ---
 
@@ -87,7 +84,7 @@ The STM32 HAL drivers are generated automatically by STM32CubeMX and included in
 3. Connect the Bluetooth module to USART2.
 4. Open the project in STM32CubeIDE.
 5. Build the project.
-6. Flash the program to the STM32 board.
+6. Download the program to the STM32 board.
 7. Open a Bluetooth serial terminal on a phone or PC.
 8. Reset the STM32 board.
 
@@ -167,9 +164,6 @@ The output messages are:
 
 ### Future Improvements
 
-- Add more posture classes, such as leaning left, leaning right and slouching.
-- Add vibration or buzzer feedback for bad posture.
-- Add a mobile application for real-time display.
-- Add data logging for posture history.
+
 - Improve sensor calibration.
 - Use an IMU with magnetometer support to reduce yaw drift.
