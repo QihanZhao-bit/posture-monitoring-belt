@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Version2</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connected">Connected</string>
+    <string name="history">History</string>
+    <string name="good_posture">Good Posture</string>
+    <string name="bad_posture">Bad Posture</string>
+    <string name="initial_time">0s</string>
+    <string name="initial_percentage">(0%)</string>
+    <string name="time_format_seconds">%1$ds</string>
+    <string name="percentage_format">(%1$d%%)</string>
+    <string name="back">Back</string>
+
+    <string name="session">Session</string>
+    <string name="total_time">Total</string>
+    <string name="good_time">Good</string>
+    <string name="bad_time">Bad</string>
+    <string name="good_percentage">Good %</string>
+    <string name="bad_percentage">Bad %</string>
+    <string name="percentage_format_table">%1$d%%</string>
+    <string name="app_title">Posture Monitor</string>
+    <string name="history_title">Posture History</string>
+    <string name="alert_countdown">Alert in: %1$ds</string>
+    <string name="alert_permissions_required">Permissions required for Bluetooth and Alerts</string>
+</resources>
