@@ -42,7 +42,7 @@ USART2 Bluetooth Output
         |
 Mobile phone / PC serial monitor
 
-4. Installation Instructions
+## 4. Installation Instructions
 Required Software
 STM32CubeMX
 STM32CubeIDE
@@ -78,7 +78,7 @@ Add the NanoEdge AI files to the project.
 Add the NanoEdge AI include path in the compiler settings.
 Add the NanoEdge AI static library path in the linker settings.
 Build the project.
-5. How to Run the Software
+## 5. How to Run the Software
 Connect the four MPU6050 sensors to the TCA9548A I2C multiplexer.
 Connect the TCA9548A multiplexer to the STM32 I2C pins.
 Connect the Bluetooth module to USART2.
@@ -89,7 +89,7 @@ Open a Bluetooth serial terminal on a phone or PC.
 Reset the STM32 board.
 
 After startup, the software initializes the sensors and the NanoEdge AI model. During operation, it continuously sends one of the following messages through USART2:Good Posture or Bad Posture.
-6. Technical Details
+## 6. Technical Details
 Sensor Reading
 
 The system uses four MPU6050 sensors. Since MPU6050 sensors normally share the same I2C address, a TCA9548A I2C multiplexer is used to select each sensor channel.
@@ -129,7 +129,7 @@ The four MPU6050 sensors are mounted consistently on the wearable belt.
 The training data used in NanoEdge AI Studio matches the sensor placement used during real operation.
 The Bluetooth module is connected to USART2.
 The system performs binary classification only.
-7. Known Issues and Future Improvements
+## 7. Known Issues and Future Improvements
 Known Issues
 The system currently supports only two posture classes: Good Posture and Bad Posture.
 Yaw angle may drift over time because the MPU6050 does not include a magnetometer.
